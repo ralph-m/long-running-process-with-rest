@@ -20,8 +20,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 Date: Tue, 01 Mar 2016 14:25:11 GMT
 Content-Length: 132
-
-{"id":{"value":"761d91e0-5de8-4790-9e87-209b2de9237b"},"startTime":"2016-03-01T15:25:01.642+01:00","status":"RUNNING","duration":30}
+````
+````json
+{
+	"id": {
+		"value": "761d91e0-5de8-4790-9e87-209b2de9237b"
+	},
+	"startTime": "2016-03-01T15:25:01.642+01:00",
+	"status": "RUNNING",
+	"duration": 30
+}
 ````
 Querying the resource again will return the status as long as the processing has not finished
 ````
@@ -30,8 +38,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 Date: Tue, 01 Mar 2016 14:25:29 GMT
 Content-Length: 132
-
-{"id":{"value":"761d91e0-5de8-4790-9e87-209b2de9237b"},"startTime":"2016-03-01T15:25:01.642+01:00","status":"RUNNING","duration":30}
+````
+````json
+{
+	"id": {
+		"value": "761d91e0-5de8-4790-9e87-209b2de9237b"
+	},
+	"startTime": "2016-03-01T15:25:01.642+01:00",
+	"status": "RUNNING",
+	"duration": 30
+}
 ````
 An extract from the server log shows the job is still in progress
 ````
@@ -53,6 +69,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 Date: Tue, 01 Mar 2016 14:25:32 GMT
 Content-Length: 202
-
-{"job":{"id":{"value":"761d91e0-5de8-4790-9e87-209b2de9237b"},"startTime":"2016-03-01T15:25:01.642+01:00","status":"RUNNING","duration":30},"endTime":"2016-03-01T15:25:32.807+01:00","status":"FINISHED"}
+````
+````json
+{
+	"job": {
+		"id": {
+			"value": "761d91e0-5de8-4790-9e87-209b2de9237b"
+		},
+		"startTime": "2016-03-01T15:25:01.642+01:00",
+		"status": "RUNNING",
+		"duration": 30
+	},
+	"endTime": "2016-03-01T15:25:32.807+01:00",
+	"status": "FINISHED"
+}
 ````
