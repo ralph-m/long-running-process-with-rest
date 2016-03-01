@@ -1,6 +1,9 @@
 # Example Project #
 This project serves as an exemplary illustration of how to implement a long running process with REST.
 
+## How to run ##
+The application uses Play 2 with Scala. Just start it with `sbt run`.
+
 ## How to use ##
 Initiate a job and retrieve a processing resource
 ````
