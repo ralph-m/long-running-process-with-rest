@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET         /                      port.primary.JobController.index
+POST        /jobs                  port.primary.JobController.create()
+GET         /job/:id               port.primary.JobController.show(id)
+GET         /processing/:id        port.primary.JobController.showProcessing(id)
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file          controllers.Assets.versioned(path="/public", file: Asset)
