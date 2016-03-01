@@ -1,4 +1,4 @@
-This is your new Play application
+Example Project
 =================================
 
-This file will be packaged with your application, when using `activator dist`.
+This project serves as an exemplary illustration of how to implement a long running process with REST.
